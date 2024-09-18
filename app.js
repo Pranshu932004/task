@@ -187,15 +187,6 @@ document.getElementById('addElementButton').addEventListener('click', function()
 });
 
  
-
-
-
-
-
-
-
-
-
 //  Generate a navigation menu from an array of page names
 function generateMenu(pageNames) {
     const nav = document.createElement('nav');
