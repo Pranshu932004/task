@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body class="light">
+
+    <!-- Theme Switcher -->
+    <button onclick="toggleTheme()">Dark/Lght Theme</button>
+
+    <!-- Simple SPA -->
+    <nav>
+        <a href="javascript:void(0);" onclick="navigate('home')">Home</a>
+        <a href="javascript:void(0);" onclick="navigate('about')">About</a>
+    </nav>
+
+    <div id="home" class="page active">Welcome to the Home Page</div>
+    <div id="about" class="page">About Us</div>
+
+    <!-- Grid Layout -->
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <!-- Carousel/Slider -->
+    <div class="slider">
+        <div class="slides" id="slides">
+            <div><img src="./th (2).jpeg" alt="Slide 1" width="300" height="200"></div>
+            <div><img src="./th (3).jpeg" alt="Slide 2" width="300" height="200"></div>
+            <div><img src="./th 3.jpeg" alt="Slide 3" width="300" height="200"></div>
+            <div><img src="./th.jpeg" alt="Slide 3" width="300" height="200"></div>
+            <div><img src="./th1.jpeg" alt="Slide 3" width="300" height="200"></div>
+        </div>
+    </div>
+    <button onclick="nextSlide()">Next Slide</button>
+
+    <!-- Form with Validation -->
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Submit</button>
+        <p id="error"></p>
+    </form>
+
+    <!-- Data from Mock API -->
+    <h3>Fetched Data from JSONPlaceholder:</h3>
+    <ul id="dataList"></ul>
+
+    <!-- Capitalize Words -->
+    <p>Capitalized Sentence: <span id="capitalizedResult"></span></p>
+
+  <!-- Square a Number After Delay -->
+  <h1>Square a Number After Delay (Async/Await)</h1>
+  <label for="numberInputSquare">Enter a number:</label>
+  <input type="number" id="numberInputSquare" />
+  <button id="squareButton">Square the Number</button>
+  <p id="squareResult"></p>
+
+  <!-- Curried Function Example -->
+  <h1>Curried Function Example</h1>
+  <label for="firstNumberCurried">Enter first number:</label>
+  <input type="number" id="firstNumberCurried" />
+  <br><br>
+  <label for="secondNumberCurried">Enter second number:</label>
+  <input type="number" id="secondNumberCurried" />
+  <br><br>
+  <label for="thirdNumberCurried">Enter third number:</label>
+  <input type="number" id="thirdNumberCurried" />
+  <br><br>
+  <button id="addButtonCurried">Add Numbers</button>
+  <p id="curriedResult"></p>
+
+  <!-- Compose Function Example -->
+  <h1>Compose Function Example</h1>
+  <label for="numberInputCompose">Enter a number:</label>
+  <input type="number" id="numberInputCompose" />
+  <button id="composeButton">Compose Functions</button>
+  <p id="composeResult"></p>
+
+  <!-- Flatten Nested Array Example -->
+  <h1>Flatten Nested Array Example</h1>
+  <label for="arrayInput">Enter a nested array (e.g., [1, [2, [3, 4]], 5]):</label>
+  <input type="text" id="arrayInput" />
+  <button id="flattenButton">Flatten Array</button>
+  <p id="flattenResult"></p>
+
+  <!-- Calculate Area of a Circle -->
+  <h1>Calculate Area of a Circle</h1>
+  <label for="radiusInput">Enter the radius:</label>
+  <input type="number" id="radiusInput" />
+  <button id="calculateButton">Calculate Area</button>
+  <p id="areaResult"></p>
+
+  <!-- Log Input and Output Example -->
+  <h1>Log Input and Output Example</h1>
+  <label for="firstNumberLog">Enter first number:</label>
+  <input type="number" id="firstNumberLog" />
+  <br><br>
+  <label for="secondNumberLog">Enter second number:</label>
+  <input type="number" id="secondNumberLog" />
+  <br><br>
+  <button id="logButton">Add Numbers</button>
+  <p id="logResult"></p>
+
+  <!-- Extract First and Last Name -->
+  <h1>Extract First and Last Name</h1>
+  <label for="userNameInput">Enter your full name:</label>
+  <input type="text" id="userNameInput" placeholder="e.g., John Doe" />
+  <button id="extractButton">Extract Names</button>
+  <p id="nameResult"></p>
+
+  <!-- Add Element to Array Example -->
+  <h1>Add Element to Array Example</h1>
+  <label for="elementInput">Enter an element to add:</label>
+  <input type="text" id="elementInput" />
+  <button id="addElementButton">Add Element</button>
+  <p id="originalArrayDisplay"></p>
+  <p id="resultArrayDisplay"></p>
+
+
+    <script src ="app.js">
+         document.body.classList.add(localStorage.getItem('theme') || 'light');
+    </script>
+</body>
+</html>
